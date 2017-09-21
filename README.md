@@ -1,5 +1,5 @@
 # CMS-Scan
-An active scan extension for [Burp](http://portswigger.net/) that provides supplemental coverage when testing popular content management systems.
+An active scan extension for [Burp](https://portswigger.net/) that provides supplemental coverage when testing popular content management systems.
 
 # Test Cases
  **Drupal**
