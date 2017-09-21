@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>burp</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="burp";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../burp/package-summary.html">Package</a></li>
+<li>Class</li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Package</li>
+<li>Next Package</li>
+</ul>
+<ul class="navList">
+<li><a href="../index.html?burp/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;burp</h1>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IBurpCollaboratorClientContext.html" title="interface in burp">IBurpCollaboratorClientContext</a></td>
+<td class="colLast">
+<div class="block">This interface represents an instance of a Burp Collaborator client context,
+ which can be used to generate Burp Collaborator payloads and poll the
+ Collaborator server for any network interactions that result from using those
+ payloads.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IBurpCollaboratorInteraction.html" title="interface in burp">IBurpCollaboratorInteraction</a></td>
+<td class="colLast">
+<div class="block">This interface represents a network interaction that occurred with the Burp
+ Collaborator server.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IBurpExtender.html" title="interface in burp">IBurpExtender</a></td>
+<td class="colLast">
+<div class="block">All extensions must implement this interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IBurpExtenderCallbacks.html" title="interface in burp">IBurpExtenderCallbacks</a></td>
+<td class="colLast">
+<div class="block">This interface is used by Burp Suite to pass to extensions a set of callback
+ methods that can be used by extensions to perform various actions within
+ Burp.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IContextMenuFactory.html" title="interface in burp">IContextMenuFactory</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerContextMenuFactory()</code> to register
+ a factory for custom context menu items.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IContextMenuInvocation.html" title="interface in burp">IContextMenuInvocation</a></td>
+<td class="colLast">
+<div class="block">This interface is used when Burp calls into an extension-provided
+ <code>IContextMenuFactory</code> with details of a context menu invocation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/ICookie.html" title="interface in burp">ICookie</a></td>
+<td class="colLast">
+<div class="block">This interface is used to hold details about an HTTP cookie.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IExtensionHelpers.html" title="interface in burp">IExtensionHelpers</a></td>
+<td class="colLast">
+<div class="block">This interface contains a number of helper methods, which extensions can use
+ to assist with various common tasks that arise for Burp extensions.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IExtensionStateListener.html" title="interface in burp">IExtensionStateListener</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerExtensionStateListener()</code> to
+ register an extension state listener.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IHttpListener.html" title="interface in burp">IHttpListener</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerHttpListener()</code> to register an
+ HTTP listener.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IHttpRequestResponse.html" title="interface in burp">IHttpRequestResponse</a></td>
+<td class="colLast">
+<div class="block">This interface is used to retrieve and update details about HTTP messages.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IHttpRequestResponsePersisted.html" title="interface in burp">IHttpRequestResponsePersisted</a></td>
+<td class="colLast">
+<div class="block">This interface is used for an
+ <code>IHttpRequestResponse</code> object whose request and response messages
+ have been saved to temporary files using
+ <code>IBurpExtenderCallbacks.saveBuffersToTempFiles()</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IHttpRequestResponseWithMarkers.html" title="interface in burp">IHttpRequestResponseWithMarkers</a></td>
+<td class="colLast">
+<div class="block">This interface is used for an
+ <code>IHttpRequestResponse</code> object that has had markers applied.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IHttpService.html" title="interface in burp">IHttpService</a></td>
+<td class="colLast">
+<div class="block">This interface is used to provide details about an HTTP service, to which
+ HTTP requests can be sent.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IInterceptedProxyMessage.html" title="interface in burp">IInterceptedProxyMessage</a></td>
+<td class="colLast">
+<div class="block">This interface is used to represent an HTTP message that has been intercepted
+ by Burp Proxy.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IIntruderAttack.html" title="interface in burp">IIntruderAttack</a></td>
+<td class="colLast">
+<div class="block">This interface is used to hold details about an Intruder attack.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IIntruderPayloadGenerator.html" title="interface in burp">IIntruderPayloadGenerator</a></td>
+<td class="colLast">
+<div class="block">This interface is used for custom Intruder payload generators.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IIntruderPayloadGeneratorFactory.html" title="interface in burp">IIntruderPayloadGeneratorFactory</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerIntruderPayloadGeneratorFactory()</code>
+ to register a factory for custom Intruder payloads.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IIntruderPayloadProcessor.html" title="interface in burp">IIntruderPayloadProcessor</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerIntruderPayloadProcessor()</code> to
+ register a custom Intruder payload processor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IMenuItemHandler.html" title="interface in burp">IMenuItemHandler</a></td>
+<td class="colLast">Deprecated
+<div class="block"><i>Use
+ <code>IContextMenuFactory</code> instead.</i></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IMessageEditor.html" title="interface in burp">IMessageEditor</a></td>
+<td class="colLast">
+<div class="block">This interface is used to provide extensions with an instance of Burp's HTTP
+ message editor, for the extension to use in its own UI.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IMessageEditorController.html" title="interface in burp">IMessageEditorController</a></td>
+<td class="colLast">
+<div class="block">This interface is used by an
+ <code>IMessageEditor</code> to obtain details about the currently displayed
+ message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IMessageEditorTab.html" title="interface in burp">IMessageEditorTab</a></td>
+<td class="colLast">
+<div class="block">Extensions that register an
+ <code>IMessageEditorTabFactory</code> must return instances of this
+ interface, which Burp will use to create custom tabs within its HTTP message
+ editors.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IMessageEditorTabFactory.html" title="interface in burp">IMessageEditorTabFactory</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerMessageEditorTabFactory()</code> to
+ register a factory for custom message editor tabs.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IParameter.html" title="interface in burp">IParameter</a></td>
+<td class="colLast">
+<div class="block">This interface is used to hold details about an HTTP request parameter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IProxyListener.html" title="interface in burp">IProxyListener</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerProxyListener()</code> to register a
+ Proxy listener.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IRequestInfo.html" title="interface in burp">IRequestInfo</a></td>
+<td class="colLast">
+<div class="block">This interface is used to retrieve key details about an HTTP request.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IResponseInfo.html" title="interface in burp">IResponseInfo</a></td>
+<td class="colLast">
+<div class="block">This interface is used to retrieve key details about an HTTP response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IResponseKeywords.html" title="interface in burp">IResponseKeywords</a></td>
+<td class="colLast">
+<div class="block">This interface is used to represent the counts of keywords appearing in a
+ number of HTTP responses.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IResponseVariations.html" title="interface in burp">IResponseVariations</a></td>
+<td class="colLast">
+<div class="block">This interface is used to represent variations between a number HTTP
+ responses, according to various attributes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IScanIssue.html" title="interface in burp">IScanIssue</a></td>
+<td class="colLast">
+<div class="block">This interface is used to retrieve details of Scanner issues.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IScannerCheck.html" title="interface in burp">IScannerCheck</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerScannerCheck()</code> to register a
+ custom Scanner check.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IScannerInsertionPoint.html" title="interface in burp">IScannerInsertionPoint</a></td>
+<td class="colLast">
+<div class="block">This interface is used to define an insertion point for use by active Scanner
+ checks.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IScannerInsertionPointProvider.html" title="interface in burp">IScannerInsertionPointProvider</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerScannerInsertionPointProvider()</code>
+ to register a factory for custom Scanner insertion points.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IScannerListener.html" title="interface in burp">IScannerListener</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerScannerListener()</code> to register a
+ Scanner listener.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/IScanQueueItem.html" title="interface in burp">IScanQueueItem</a></td>
+<td class="colLast">
+<div class="block">This interface is used to retrieve details of items in the Burp Scanner
+ active scan queue.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/IScopeChangeListener.html" title="interface in burp">IScopeChangeListener</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerScopeChangeListener()</code> to register
+ a scope change listener.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/ISessionHandlingAction.html" title="interface in burp">ISessionHandlingAction</a></td>
+<td class="colLast">
+<div class="block">Extensions can implement this interface and then call
+ <code>IBurpExtenderCallbacks.registerSessionHandlingAction()</code> to
+ register a custom session handling action.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/ITab.html" title="interface in burp">ITab</a></td>
+<td class="colLast">
+<div class="block">This interface is used to provide Burp with details of a custom tab that will
+ be added to Burp's UI, using a method such as
+ <code>IBurpExtenderCallbacks.addSuiteTab()</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../burp/ITempFile.html" title="interface in burp">ITempFile</a></td>
+<td class="colLast">
+<div class="block">This interface is used to hold details of a temporary file that has been
+ created via a call to
+ <code>IBurpExtenderCallbacks.saveToTempFile()</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../burp/ITextEditor.html" title="interface in burp">ITextEditor</a></td>
+<td class="colLast">
+<div class="block">This interface is used to provide extensions with an instance of Burp's raw
+ text editor, for the extension to use in its own UI.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../burp/package-summary.html">Package</a></li>
+<li>Class</li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Package</li>
+<li>Next Package</li>
+</ul>
+<ul class="navList">
+<li><a href="../index.html?burp/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>
